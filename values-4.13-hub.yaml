@@ -1,0 +1,3 @@
+clusterGroup:
+    lvms:
+      channel: stable-4.13
