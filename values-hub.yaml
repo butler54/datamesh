@@ -22,6 +22,8 @@ clusterGroup:
 
   projects:
     - hub
+    - config-demo
+    - hello-world
 
   applications:
     acm:
