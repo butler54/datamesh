@@ -1,3 +1,4 @@
 clusterGroup:
+  applications:
     lvms:
       channel: stable-4.13
