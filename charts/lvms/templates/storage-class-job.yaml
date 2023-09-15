@@ -12,11 +12,11 @@ spec:
         - /bin/bash
         - -ce
         - |
-          oc annotate sc/gp3-csi storageclass.kubernetes.io/is-default-class=true
+          oc annotate --overwrite  storageclass.kubernetes.io/is-default-class=true
           # 
           # set +e
-          oc annotate sc/lvms-{{ .Values.lvms.volumeGroup }} storageclass.kubernetes.io/is-default-class-
-          oc annotate sc/gp2 storageclass.kubernetes.io/is-default-class-
+          oc annotate --overwrite sc/lvms-{{ .Values.lvms.volumeGroup }} storageclass.kubernetes.io/is-default-class-
+          oc annotate --overwrite sc/gp2 storageclass.kubernetes.io/is-default-class-
           
         name: annotate-sc
       dnsPolicy: ClusterFirst
