@@ -24,6 +24,7 @@ clusterGroup:
     - hub
     - config-demo
     - hello-world
+    - datamesh-stack
 
   applications:
     acm:
@@ -54,6 +55,13 @@ clusterGroup:
       namespace: openshift-storage
       project: hub
       path: charts/lvms
+
+    stack:
+      name: stack
+      namespace: datamesh
+      project: datamesh-stack
+      path: charts/all/stack
+
     ipa:
       name: ipa
       namespace: ipa

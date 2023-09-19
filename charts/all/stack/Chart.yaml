@@ -1,0 +1,4 @@
+apiVersion: v2
+description: A Helm chart to build a utility container
+name: stack
+version: 0.0.1
