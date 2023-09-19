@@ -8,6 +8,7 @@ clusterGroup:
     - golang-external-secrets
     - openshift-storage
     - ipa
+    - stack
 
   subscriptions:
     acm:
