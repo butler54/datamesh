@@ -9,6 +9,7 @@ clusterGroup:
     - openshift-storage
     - ipa
     - stack
+    - datamesh
 
   subscriptions:
     acm:
